@@ -35,6 +35,25 @@ ZooKeeper筆記
 
 ![image](./images/20210707194044.png)
 
+會使用到jps指令，要再安裝devel
+
+**Java Virtual Machine Process Status Tool可以列出本機所有Java程序的pid**
+
+```bash
+yum  install  -y  java-1.8.0-openjdk-devel.x86_64
+
+```
+
+![image](./images/20210710111205.png)
+
+測試jps
+
+```bash
+jps
+```
+
+![image](./images/20210710111619.png)
+
 # ZooKeeper 下載與安裝
 
 
@@ -60,6 +79,14 @@ cd bin/
 成功運行服務器
 
 ![image](./images/20210707202719.png)
+
+查看運行狀態
+
+```bash
+jps -l
+```
+
+![image](./images/20210710111316.png)
 
 運行客戶端
 
